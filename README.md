@@ -156,38 +156,39 @@ By using branches:
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
 
-Role of Pull Requests in the GitHub Workflow
-Pull requests (PRs) are a key feature of the GitHub workflow that enable teams to collaborate effectively and maintain high-quality code. A pull request represents a proposal to merge changes from one branch (typically a feature branch) into another (often the main branch). Here's how they contribute:
+Pull requests (PRs) are a key feature of the GitHub workflow that enable teams to collaborate effectively and maintain high-quality code. A pull request represents a proposal to merge changes from one branch (typically a feature branch) into another (often the main branch). 
 Facilitation of Code Review
 1.	Collaborative Review: PRs provide a platform for team members to review, comment on, and discuss changes before they are merged.
 2.	Feedback Mechanism: Reviewers can suggest improvements, catch bugs, or identify issues with the changes.
 3.	Knowledge Sharing: Team members gain insight into what others are working on, enhancing collaboration and learning.
+   
 Promotion of Workflow Best Practices
 1.	Controlled Integration: PRs ensure that only reviewed and approved changes are merged, maintaining the stability of the main branch.
 2.	Documentation: PRs serve as a historical record of what changes were made, why, and by whom.
+   
 Typical Steps in Creating and Merging a Pull Request
 1. Create a Pull Request
 •	Ensure your branch contains the changes you want to propose.
 •	On GitHub, navigate to the repository and click "Pull Requests" in the top menu.
 •	Click "New Pull Request" and select the branches involved:
-o	Base Branch: The branch you want to merge into (e.g., main).
-o	Compare Branch: The branch with your changes (e.g., feature-xyz).
+-	Base Branch: The branch you want to merge into (e.g., main).
+-	Compare Branch: The branch with your changes (e.g., feature-xyz).
 •	Add a title and a description to explain your changes. Be clear about the purpose and context.
 2. Review and Discuss
 •	Other team members or reviewers will assess the PR. They may:
-o	Leave comments on specific lines of code.
-o	Approve the PR if it's ready.
-o	Request changes if adjustments are needed.
+ -	Leave comments on specific lines of code.
+-	Approve the PR if it's ready.
+-	Request changes if adjustments are needed.
 •	Address feedback by making updates in your branch and pushing the changes. The PR will automatically reflect these updates.
 3. Run Tests
 •	Automated checks (e.g., continuous integration tests) often run to ensure the changes don’t break the project.
 •	Developers should verify that all checks pass before proceeding.
 4. Merge the Pull Request
 •	Once the PR is approved and tests are successful, it’s time to merge:
-o	Click "Merge Pull Request" on GitHub.
-o	Choose between merge strategies (e.g., merge commit, squash merge, or rebase merge).
+-	Click "Merge Pull Request" on GitHub.
+-	Choose between merge strategies (e.g., merge commit, squash merge, or rebase merge).
 •	After merging, delete the feature branch to keep the repository tidy.
-Pull Requests in Context
+
 PRs act as gatekeepers of quality and collaboration. They allow developers to review, refine, and understand changes before integration, ensuring that everyone is on the same page. They are especially valuable for distributed teams, open-source projects, or when maintaining critical systems.
 
 ## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
