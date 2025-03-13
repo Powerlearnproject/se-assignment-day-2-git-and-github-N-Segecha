@@ -86,6 +86,32 @@ Which to Choose for Collaborative Projects?
 
 ## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
 
+A commit in version control is a record of changes made to the project files.
+Commits are crucial since they help one:
+1.	Track Changes: They allow you to review what changes were made and by whom.
+2.	Enable Versioning: They help maintain a history of the project, making it easy to revert to previous versions if necessary.
+3.	Facilitate Collaboration: Provide a clear log of contributions for teams working on the same codebase.
+   
+Steps to Make Your First Commit
+1. Set Up Your Git Environment by installing Git on your computer and configure it with your username and email using the instructions below:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+2. Clone a repository to your local machine if working with an existing GitHub repository or Initialize a Repository if starting a new project by navigating to the project directory and initializing it as a Git repository.
+   For cloning, the following command is used in the Git bash: 
+git clone https://github.com/username/repository.git
+cd repository
+For a new project the following command is used to initialize it in the Git bash: 
+git init
+4. Create or Modify Files by using the following command (example for creating a README file):
+echo "# My First Project" > README.md
+5. Stage the Changes for the commit using git add. This tells Git which changes you want to include in the next commit:
+git add .
+The . stages all changes in the current directory. Alternatively, you can specify individual files, e.g., git add README.md.
+6. Commit the Changes by creating a commit to save the staged changes with a descriptive message:
+git commit -m "Initial commit: added README file"
+7. Push the Commit to GitHub if working with a remote repository (e.g., on GitHub), push your changes (ensure that main matches the default branch name of the repository, could be master):
+git push origin main
+
 ## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
 
 ## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
